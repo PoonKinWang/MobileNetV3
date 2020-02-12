@@ -51,7 +51,6 @@ class MobileNetV3(nn.Module):
         self.globalpool = nn.AvgPool2d(7)
         self.conv_last2 = nn.Sequential(
             nn.Conv2d(in_channels=self.out[-2], out_channels=self.out[-1], kernel_size=ks[-1], stride=stride[-1], padding=ks[-1]//2, bias=False),
-            nn.BatchNorm2d(self.out[-1]),
             activation[-1]
         )
         self.classifier = nn.Sequential(nn.Linear(self.out[-1], n_class, bias=False))
