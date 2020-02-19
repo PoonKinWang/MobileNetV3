@@ -1,7 +1,7 @@
 # MobileNetV3-Pytorch
 
 All hyper-parameters are compeletely following original paper.
-The pre-train model of V3-Small is uploaded.
+
 
 | Model | Ours | Paper |
 | ------ | ------ | ------ |
